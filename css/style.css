@@ -1,0 +1,167 @@
+/*width: 450*/
+/*height: 700*/
+/*==================================================== CSS reset ===================================================================================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #55606e;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*==================================================== containers ===================================================================================*/
+
+#main{
+	width: 1440px;
+	height: 900px;
+	background: hsla(225, 100%, 94%, 1) url("../images/pattern-background-desktop.svg") no-repeat ;
+	margin: 20px auto;
+	text-align: center;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.container{
+	position: relative;
+	color: hsl(224, 23%, 55%);
+	top: 102px;
+	width: 450px;
+	height: 700px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 25px;
+	overflow: hidden;
+	box-shadow: 0 11px 8px 0 rgba(0,0,0,0.1);
+}
+
+h1{
+	font-size: 1.8rem;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+}
+
+.bottom{
+	margin: 40px 54px;
+}
+
+.ads{
+	padding: 20px 0 25px;
+}
+.plan{
+	background: hsl(225, 100%, 98%);
+	border-radius: 10px;
+	overflow: auto;
+	padding: 23px;
+	margin-bottom: 33px;
+}
+
+.plan a{
+	float: right;
+	color: hsl(245, 75%, 52%);
+	text-decoration: underline;
+	margin-top: 10px;
+	font-weight: 700;
+}
+
+.plan a:hover{
+	text-decoration: none;
+	color:hsla(245, 75%, 52%, .7);
+}
+
+span{
+	display: block;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	margin-bottom: 4px;
+}
+.price{
+	margin-left: 20px;
+	
+}
+
+.note, .price{
+	float: left;
+}
+
+.payment{
+	background-color: hsl(245, 75%, 52%);
+	text-align: center;
+	padding: 20px 100px;
+	color: white;
+	width: 100%;
+	display: block;
+	margin-bottom: 30px;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 20px 8px 0 rgba(0,0,0,0.1);
+}
+.payment:hover{
+	background-color: hsla(245, 75%, 52%, .7);
+}
+
+.cancel{
+	font-weight: 900;
+	color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover{
+	text-decoration: none;
+	color: hsl(223, 47%, 23%);
+}
